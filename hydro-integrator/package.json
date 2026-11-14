@@ -1,0 +1,26 @@
+{
+  "name": "hydro-integrator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "浏览器端水文站数据整合工具（DuckDB-WASM，ODS/DWD/DWS 分层）",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "gen:data": "node scripts/generate-test-data.mjs"
+  },
+  "devDependencies": {
+    "@duckdb/duckdb-wasm": "^1.33.1-dev57.0",
+    "@playwright/test": "^1.65.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0"
+  },
+  "dependencies": {
+    "apache-arrow": "^17.0.0"
+  }
+}

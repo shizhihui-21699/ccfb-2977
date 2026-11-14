@@ -1,0 +1,9 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+*.log
+.DS_Store
+
+# 测试数据可由 npm run gen:data 重新生成
+testdata/

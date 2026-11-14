@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>水文数据整合平台</title>
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">水</div>
+        <div>
+          <div class="brand-title">水文数据整合</div>
+          <div class="brand-sub">DuckDB-WASM · ODS/DWD/DWS</div>
+        </div>
+      </div>
+      <nav id="nav" class="nav"></nav>
+      <div class="sidebar-foot">
+        <button id="btn-export" class="btn btn-ghost btn-block">导出快照(JSON)</button>
+        <label class="btn btn-ghost btn-block">
+          导入快照
+          <input id="file-snapshot" type="file" accept="application/json" hidden />
+        </label>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <h1 id="page-title">数据源</h1>
+        <div id="page-actions" class="page-actions"></div>
+      </header>
+      <section id="page-body" class="page-body"></section>
+    </main>
+  </div>
+  <div id="toast" class="toast" hidden></div>
+  <script type="module" src="/src/ui/main.ts"></script>
+</body>
+</html>
